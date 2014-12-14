@@ -25,6 +25,7 @@ Bundle 'slim-template/vim-slim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'szw/vim-ctrlspace'
+Bundle 'jmcomets/vim-pony'
 
 filetype plugin indent on
 
