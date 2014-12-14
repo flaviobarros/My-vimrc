@@ -120,5 +120,10 @@ let g:ctrlp_max_depth = 5
 " Go programming
 set rtp+=/usr/local/Cellar/go/1.0.3/misc/vim
 
+" Python programming
+autocmd FileType python set sw=4
+autocmd FileType python set ts=4
+autocmd FileType python set sts=4
+
 " Quit with :Q
 command -nargs=0 Quit :qa!
