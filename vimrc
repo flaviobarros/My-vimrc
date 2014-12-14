@@ -22,6 +22,9 @@ Bundle 'rking/ag.vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'slim-template/vim-slim'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'szw/vim-ctrlspace'
 
 filetype plugin indent on
 

@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/ra016120/Dropbox/Mestrado/Script'
+let g:netrw_dirhist_2='/var'
+let g:netrw_dirhist_3='/var/cache'
+let g:netrw_dirhist_4='/data/censo/MonetDB/censo_demografico'
+let g:netrw_dirhist_5='/home/ra016120/Gitprojects/Censo/raw/xls'
