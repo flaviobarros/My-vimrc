@@ -27,6 +27,19 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'szw/vim-ctrlspace'
 Bundle 'jmcomets/vim-pony'
 Bundle 'SirVer/ultisnips'
+Bundle 'vim-scripts/Pydiction'
+Bundle 'Raimondi/delimitMate'
+Bundle 'Glench/Vim-Jinja2-Syntax'
+"Bundle 'klen/python-mode'
+Bundle 'honza/vim-snippets'
+Bundle 'bonsaiben/bootstrap-snippets' 
+"Bundle 'MarcWeber/vim-addon-mw-utils'
+"Bundle 'tomtom/tlib_vim'
+"Bundle 'garbas/vim-snipmate'
+Bundle 'chrisgillis/vim-bootstrap3-snippets' 
+Bundle 'mattn/emmet-vim'
+Bundle 'antoyo/vim-licenses'
+Bundle 'zenorocha/dracula-theme'
 
 filetype plugin indent on
 
@@ -133,5 +146,41 @@ let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language
 let g:ycm_complete_in_comments = 1 " Completion in comments
 let g:ycm_complete_in_strings = 1 " Completion in string
 
-" Quit with :Q
-command -nargs=0 Quit :qa!
+" Set change directory to ,cd
+nnoremap ,cd :cd %:p:h<CR>
+
+" Configuration to UltiSnip: Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="ç"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+" Pydiction configuration
+let g:pydiction_location = '/home/ra016120/.vim/bundle/Pydiction/complete-dict'
+
+" Put dollar sign when changing word
+:set cpoptions+=$
+
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+" Set paste mode easily
+set pastetoggle=<F3>
+
+" Super cool remap
+nnoremap ; :
+
+" It clear search buffer when ,/
+nmap <silent> ,/ :nohlsearch<CR>
+
+" Use w!! in the case of sudo needed, and you forget
+cmap w!! w !sudo tee % >/dev/null
+
+" Use :Q instead of :q!
+:command -bang Q quit<bang>
+
+" Use Ctrl + j to replace a word for the buffer
+:map <C-j> cw<C-r>0<ESC>
